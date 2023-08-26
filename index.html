@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modernStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Oswald:wght@500&family=Roboto:wght@300;500;700&family=Sora:wght@700&family=Teko:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Oswald:wght@500&family=Roboto:wght@300;400;500;700&family=Sora:wght@700&family=Teko:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<ul class="circles">
+  <li class="red">X</li>
+  <li class="red zer zero">O</li>
+  <li class="red">X</li>
+  <li class="green zer zero">O</li>
+  <li class="green">X</li>
+  <li class="green  zer zero">O</li>
+  <li class="blue">X</li>
+  <li class="blue zero zer">O</li>
+  <li class="blue">X</li>
+  <li class="blue zero zer">O</li>
+</ul> 
+<div class="custom-shape-divider-bottom-1692636467">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+<div class="contentcontainer">
+<div class="svgcontainer">
+  <img class="welcome" src="./Assets/default-monochrome.svg" alt="">
+</div>
+  <div class="welcometext" >
+      <div class="text">
+        <div  class="description">Hey Guys, I'm excited to share my take on the classic Tic-Tac-Toe game, inspired by The Odin Project. Feel free to explore my version of this timeless game and have some fun. So, go ahead, dive in, and let the games begin!</div>
+        <button  class="gamestartbutton" >Start</button>
+      </div>
+    </div>
+    <div class="buttons notvisible" style="display: none;">
+      <div class="whatmod ">What mode would you like to play? </div>
+      <div class="player">
+        <button  class="playerbutton" >Player</button> 
+      </div>
+      <div class="aibtton">
+        <button  class="ai-button" >AI</button> 
+      </div>
+    </div>
+    
+    <form class="namesform" >
+      <div>
+        <label class="formtext">player X name:</label>
+        <input  type="name"  name="text" class="namesinput"  id="player1input"  minlength="0">
+      </div>
+      <div>
+        <label class="formtext">player O name:</label>
+        <input placeholder="" type="text" name="text" class="namesinput" id="player2input"  minlength="0">
+      </div>
+      <button type="button" class="formbutton">Enter</button>
+    </form>
+
+    <div class="container" style="display: none;" >
+      <div class="rightcontainer" >
+        <div class="gamestatus" style="display: none;">Make Your Move</div>
+        <div class="statuscontainer">
+          <div class="personn">
+            <div class="winstatuss"></div>
+            <div class="picandname">
+              <div class="human">
+                <img  class=".avatar" src="./Assets/icons8-futurama-fry-80.png" alt="">
+            </div>
+            <div class="nameone">You</div>
+          </div>
+          </div>
+          <div class="machinee">
+            <div class="winstatus"></div>
+            <div class="machine">
+              <img class="robot" src="./Assets/icons8-robot-100.png" alt="">
+            </div>
+            <div class="nametwo">AI</div>
+          </div>
+        </div>
+        <div  class="actualgamecontainer cellcontainer" > 
+          <div id="box1" class="grid-box " data-index-number="0"><span class="content"></span></div>
+          <div id="box2" class="grid-box " data-index-number="1"><span class="content"></span></div>
+          <div id="box3" class="grid-box " data-index-number="2"><span class="content"></span></div>
+          <div id="box4" class="grid-box " data-index-number="3"><span class="content"></span></div>
+          <div id="box5" class="grid-box " data-index-number="4"><span class="content"></span></div>
+          <div id="box6" class="grid-box " data-index-number="5"><span class="content"></span></div>
+          <div id="box7" class="grid-box " data-index-number="6"><span class="content"></span></div>
+          <div id="box8" class="grid-box " data-index-number="7"><span class="content"></span></div>
+          <div id="box9" class="grid-box " data-index-number="8"><span class="content"></span></div>
+        </div>
+        <!-- <div class="resetbtn" style=""> -->
+          <div class="bottombuttons">
+            <div class="backbutton">
+              <button class="back gamestartbutton">Back</button>
+            </div>
+            <div class="resetbuttonn">
+              <button class="resetbutton">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  
+
+
+</div>
+</body>
+<script src="./script.js"></script>
+<!-- <script src="./original.js"></script> -->
+</html>
