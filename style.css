@@ -17,6 +17,9 @@ body {
 
     
 }
+html, body {
+  overflow: hidden;
+}
 .container {
   display: flex;
   height: 100vh;
@@ -535,7 +538,7 @@ button:hover {
 .playerbutton, .ai-button, .resetbutton{
   /* opacity: 0; */
   /* visibility: hidden; */
-  display: block;
+  /* display: block; */
   z-index: 2;
   position:absolute;
 
@@ -553,6 +556,8 @@ button:hover {
   height: 50%;
   /* width: 100%; */
   /* display: flex; */
+  display: grid;
+  place-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -565,7 +570,9 @@ button:hover {
   z-index: 4;
   /* background: red; */
 }
-
+.player {
+  /* margin-right: 0.5rem; */
+}
 form {
   opacity: 0;
   transition: all 0.4s ease-in;
@@ -582,6 +589,7 @@ form {
 form .formtext {
   margin-right: 9rem;
   margin-bottom: 0.3rem;
+  width: 10rem;
   /* color: black; */
   color: #00FFFF;
 
